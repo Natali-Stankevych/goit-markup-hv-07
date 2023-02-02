@@ -20,16 +20,17 @@
 
 <body class="page">
   <header class="header">
-    <!-- <div class="contanier header-container">
+    <div class="contanier header-container">
+       <a class="link-nav" href="./index.html"> <span>WEB</span>STUDIO</a>
       <nav class="header-nav">
-        <a class="link-nav" href="./index.html"> <span>WEB</span>STUDIO</a>
+       
         <ul class="list header-list">
-          <li class="list-item"><a class="slaider link link-list" href=""> <span>Studio</span></a></li>
-          <li class="list-item"><a class="link link-list" href="./portfolio.html">Portfolio</a></li>
+          <li class="list-item"><a class=" slaider link link-list" href=""> <span>Studio</span></a></li>
+          <li class="list-item"><a class=" link link-list" href="./portfolio.html">Portfolio</a></li>
           <li class="list-item"><a class="link link-list" href="">Contacts</a></li>
         </ul>
       </nav>
-      <ul class="list header-list">
+      <ul class="list header-list nav_contacts">
         <li class="list-item"><a class="link link-header" href="mailto:info@devstudio.com">
           
           info@devstudio.com</a></li>
@@ -37,7 +38,14 @@
          
           +11 (000) 111-11-11</a></li>
       </ul>
-    </div> -->
+
+       <button class="mobil-btn js-open-menu "
+      type="button">
+       <svg class="" width="40" height="40">
+              <use href="./img/icons.svg#menu_40px"></use>
+            </svg>
+    </button>
+    </div>
   </header>
   <main>
 
@@ -395,10 +403,13 @@
 
   <footer class="footer">
     <div class="contanier footer-contanier ">
-    <div class="cont-footer">
+    
+      <div class="cont-social">
+        <div class="cont-footer">
       <a class="link-footer" href="./index.html"> <span> WEB</span>STUDIO</a>
+      
         <div class="footer-cont">
-          <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+          <p class="footer-text">Increase the flow of customers and <br> sales for your business with digital <br> marketing & growth solutions.</p>
          </div>
         </div>
         <div class="footer-socials">
@@ -433,6 +444,7 @@
             </a>
           </li>
         </ul>
+        </div>
         </div>
          <form class="register-form-Footer" name="register-form-Footer">
       <strong class="register-Footer-title">Subscribe</strong>
@@ -506,6 +518,66 @@
             </form>
           </div>
         </div>
+
+
+        <!-- mobil menu -->
+
+         <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobil-btn-close js-close-menu">
+        <svg class="mobil__icon" width="40" height="40">
+              <use href="./img/icons.svg#close-mobil"></use>
+            </svg>
+      </button>
+        
+        <ul class="list mobil-menu ">
+          <li class="mobile-list"><a class=" link link__mobile" href=""><span>Studio</span></a>
+      </li>
+          <li class="mobile-list"><a class="link link__mobile" href="./portfolio.html">Portfolio</a></li>
+          <li class="mobile-list"><a class="link link__mobile" href="">Contacts</a></li>
+        </ul>
+       
+      <ul class="list list-soc  ">
+        <li class="list-item"><a class="link link-tell" href="tel:+110001111111">
+          +11 (000) 111-11-11</a></li>
+        <li class="list-item"><a class="link link-mail" href="mailto:info@devstudio.com">
+         info@devstudio.com</a></li>
+      </ul>
+     
+       <ul class="socials-mobil list">
+              <li class=" socials-mobil"><a class="socials-link link" href="https:.//instagram.com/" target="_blank"
+                  rel="noopener noreferrer" aria-label="instagram">
+                  <svg class="socials-icon" width="20" height="20">
+                    <use href="./img/icons.svg#instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-mobil"><a class="socials-link link" href="https://twitter.com/" target="_blank"
+                  rel="noopener noreferrer" aria-label="twitter">
+                  <svg class="socials-icon" width="20" height="20">
+                    <use href="./img/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-mobil"><a class="socials-link link" href="https://facebook.com/" target="_blank"
+                  rel="noopener noreferrer" aria-label="facebook">
+                  <svg class="socials-icon" width="20" height="20">
+                    <use href="./img/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-mobil"><a class="socials-link link" href="https://linkedin.com/" target="_blank"
+                  rel="noopener noreferrer" aria-label="linkedin">
+                  <svg class="socials-icon" width="20" height="20">
+                    <use href="./img/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+      </div>
+
+
+        <script src="./js/mobil-menu.js"></script>
+  
 
   <script src="./js/modal.js"></script>
 </body>
