@@ -116,9 +116,15 @@ span {
 
 .header-container {
     display: flex;
+    padding: 24px 16px;
   
 }
-
+@media screen and (min-width:768px){
+    .header-container {
+    padding: 0;
+  
+}
+}
 
 .header-nav {
   display: none;
@@ -193,6 +199,11 @@ span {
      transition: color var(--animation);
 }
 
+@media screen and (min-width:768px){
+    .list-item-heder:not(:last-child) {
+    margin-bottom: 4px;
+}
+}
 .link-header:hover,
 .link-header:focus {
     color: var(--hover-bg-cl);
@@ -211,7 +222,7 @@ span {
 }
 .nav_contacts{
  display: block;
-   margin: 21px 0;
+   padding: 21px 0;
 }
 
 }
@@ -637,6 +648,7 @@ justify-content: start;
     .footer-contanier { 
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: center;
       padding-left: 0;
         
         
@@ -842,6 +854,12 @@ height: 40px;
 margin-bottom: 0;
     }
 }
+@media screen and (max-width: 320px){
+    .input-footer{
+width: 264px;
+height: 40px;
+    }
+}
 .input-footer::placeholder{
 font-size: 12px;
 line-height: calc(24/12);
@@ -884,7 +902,11 @@ border: 1px solid var(--border-hed-cl);
 padding: 24px 16px;
 }
 
-
+@media screen and (min-width: 768px){
+    .header-portfolio {
+padding: 0;
+}
+}
 .portfolio {
     padding: 48px 16;
 }
@@ -898,12 +920,22 @@ padding: 24px 16px;
     display: flex;
     flex-direction: column;
 }
+@media screen and (min-width: 768px){
+    .contanier-portfolio{
+        justify-content: center;
+        padding: 0;
+        padding-left: 16px;
+    }
+}
+
 .portfolio-list-btn{
     display: flex;
      flex-wrap: wrap;
     justify-content: flex-start;
+    flex-basis: calc((100% - 48px) / 3);
      gap: 24px;
      margin-bottom: 50px;
+     padding-right: 140px;
 }
 
      @media screen and (min-width: 768px){
@@ -912,6 +944,7 @@ padding: 24px 16px;
     justify-content: center;
      gap: 8px;
      margin-bottom: 50px;
+     padding: 0;
 }
 }
 
@@ -952,18 +985,20 @@ padding: 24px 16px;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc((100% - 48px) / 3);
-    gap: 24px;
-    
+     justify-content: center;
+    align-items: center;
 }
 @media screen and (min-width: 768px){
      .portfolio-list {
     flex-basis: calc((100% - 24px) / 2);
+    gap: 24px;
+   
     }
 }
 @media screen and (min-width: 1200px){
     .portfolio-list {
     flex-basis: calc((100% - 48px) / 3);
+
     }
 }
 .list-portfolio{
@@ -986,8 +1021,8 @@ padding: 24px 16px;
 .txt-portfolio{
    border: 1px solid var(--border-color); 
    border-top: 0px;
-    padding-left: 16px;
-      padding: 32px 0;
+   padding-left: 16px;
+   padding: 32px 0;
 }
 @media screen and (min-width: 768px){
     .txt-portfolio{
@@ -1031,6 +1066,7 @@ padding: 24px 16px;
     justify-content: center;
     background-color: var(--blue-bg-cl);
 }
+
 
 .owerlay-desk {
     font-weight: 400;
@@ -1169,7 +1205,14 @@ padding-bottom: 4px;
     color: currentColor;
 }
 
-
+@media screen and (max-width: 320px){
+.modal-icon {
+    position: absolute;
+    left: 45px;
+    bottom: 11px;
+    color: currentColor;
+}
+}
 
 
 .input {
@@ -1187,7 +1230,12 @@ padding-bottom: 4px;
             border: 1px solid var(--blue-bg-cl);
         }
 
-
+@media screen and (max-width: 320px){
+    .input {
+    width: 264px;
+    height: 40px;
+    }
+}
 
 .input:focus+.modal-icon {
     fill: var(--blue-bg-cl);
@@ -1200,6 +1248,9 @@ padding-bottom: 4px;
      margin-bottom: 16px;
 }
 
+@media screen and (max-width: 320px){
+    
+}
 .label-textarea {
     display: block;
     margin-bottom: 20px;
@@ -1216,6 +1267,12 @@ padding-bottom: 4px;
     border-radius: 4px;
     transition: border var(--animation);
 
+}
+@media screen and (max-width: 320px){
+    .textarea-modal {
+    width: 264px;
+    height: 120px;
+    }
 }
 
    .textarea-modal:focus {
@@ -1411,6 +1468,16 @@ margin-bottom: 32px;
 color: var(--blue-bg-cl);
 
         }
+@media screen and (max-width: 320px){
+.link-tell {
+    font-weight: 600;
+font-size: 24px;
+line-height: calc(30/24) ;
+text-transform: capitalize;
+margin-bottom: 32px;
+color: var(--blue-bg-cl);
+}
+}
    
 .link-mail{
     font-weight: 500;
@@ -1430,5 +1497,11 @@ padding-bottom: 0;}
 .socials-mobil {
     display: flex;
     padding-bottom: 0;
+    justify-content: space-evenly;
     gap: 56px;
+}
+@media screen and (max-width: 320px){
+ .socials-mobil {
+    gap: 30px;
+}
 }
